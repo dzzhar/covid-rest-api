@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2024 at 04:36 AM
+-- Generation Time: Jan 19, 2024 at 05:22 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -32,7 +32,7 @@ CREATE TABLE `patients` (
   `name` varchar(30) NOT NULL,
   `phone` varchar(15) NOT NULL,
   `address` text NOT NULL,
-  `status` enum('positive','recovered','dead','') NOT NULL,
+  `status` enum('positive','recovered','dead') NOT NULL,
   `in_date_at` date NOT NULL,
   `out_date_at` date NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
